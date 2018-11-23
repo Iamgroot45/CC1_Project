@@ -1,0 +1,320 @@
+//--font_variables
+$primaryFont: 'Josefin Sans', sans-serif;
+$secondaryFont: 'Mukta', sans-serif;
+$tertiaryFont: 'Raleway', sans-serif;
+
+//--color_variables
+$primaryColor: #ffffff;
+$hoverColor: #666537;
+
+//--style for header
+header{
+    height: 79px;
+    width: 100%;
+    background-color: #1E1A1B;
+
+    .headerContainer{
+        cursor: pointer;
+        position: fixed;
+
+        .change .bar1 {
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        
+        .change .bar2 {
+            opacity: 0;
+        }
+        
+        .change .bar3 {
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .menuToggle{
+            padding: 20px;
+            background-color: #1E1A1B;
+            border: none;
+
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: #fff;
+                margin: 6px 0;
+                transition: 0.4s;
+            }   
+        }
+        
+
+    }
+}
+//--menuOverlay
+.menuToggleInner{
+    background-color: #1E1A1B;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    
+    a{
+        position: relative;
+        width: 100%;
+        top: 15%;
+        text-align: center;
+        color: #efefef;
+        padding: 10px ;
+        text-decoration: none;
+        font-size: 37px;
+        font-family: $secondaryFont;
+        letter-spacing: 0.2em;
+        display: block;
+    } 
+    
+    a:hover{
+        color: $hoverColor;
+        transition: 0.3s;
+    }
+}
+.show{
+    width: 100%;
+    transition: 0.6s;
+}
+
+//Intro
+#introduction{
+    margin: 0% 5%;
+    padding-bottom: 15%;
+
+    .content{
+        margin-top: 10%;
+
+        h1{
+            font-family: $primaryFont;
+            font-size: 4em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            border: 5px $primaryColor solid;
+            max-width: 55%;
+            padding: 0.5em;
+            color: $primaryColor;
+        }
+
+        p{
+            font-family: $tertiaryFont;
+            font-size: 1.5em;
+            letter-spacing: 0.4em;
+            color: $primaryColor;
+        }
+        
+        ul{
+            margin-top: 10%;
+            margin-bottom: 0;
+
+            li{
+                display: inline-block;
+                margin-left: 50px;
+
+                a{
+                    text-decoration: none;
+                    font-family: $secondaryFont;
+                    font-size: 1.7rem;
+                    color: $primaryColor;
+                    letter-spacing: .40em;
+                    
+                }
+
+                a:hover{
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+}
+
+//About_Me
+#aboutMe {    
+    background-color: #eef2f6;
+    overflow: hidden;
+    margin: 0;
+    padding: 50px 0;
+
+    .profile{
+        margin-left: 50px;
+        width: 28.33%;
+        box-sizing: border-box;
+        float: left;
+        line-height: 1.9em;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+
+        h2{
+            font-family: $primaryFont;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: black;
+        }
+
+        h3{
+            font-family: $secondaryFont;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #1E1E1E;
+        }
+
+        p{
+            font-family: $tertiaryFont;
+            font-size: 1.2em;
+            letter-spacing: 0.1em;
+            color: #2D2D2D;
+        }
+    }
+}
+
+//Portfolio
+#portfolio{
+    background-color: #353535;
+    overflow: hidden;
+    padding: 80px 0;
+
+    .imgBackground{
+        height: 210px;
+        background-size: cover;
+    }
+
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li{
+            list-style: none;
+            margin: 50px;
+            
+            .ptContent{
+                width: 401px;
+                
+                .content{
+                    background: #252525;
+                    padding: 34px 22px;
+
+                    a{
+                        font-family: $primaryFont;
+                        font-size: 1.5em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                        color: $hoverColor;
+                        text-decoration: none;
+                    }
+
+                    a:hover{
+                        color: #eef2f6;
+                        
+                    }
+
+                    h3{
+                        font-family: $secondaryFont;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        color:$hoverColor;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+//UC
+#uc{
+    background-color: #eef2f6;
+    margin: 0;
+    padding: 0;
+    border-bottom: 5px #2F2F2F solid;
+
+    .ucContainer{
+        padding: 50px 0;
+
+        .ucHymn{
+            padding: 20px 50px;
+
+            h2{
+                font-family: $primaryFont;
+                font-size: 3em;
+                letter-spacing: 0.1em;
+                text-align: center;
+                color: #1E1E1E;
+            }
+
+            p{
+                font-family: $tertiaryFont;
+                font-size: 1.6em;
+                letter-spacing: 0.1em;
+                text-align: center;
+                line-height: 2em;
+                color: #2D2D2D;
+            }
+
+        }
+    }
+}
+
+#aboutUC{
+    background-color: #252525;
+    color: #eef2f6;
+    overflow: hidden;
+
+    .aboutUcContainer{
+        h2{
+            font-family: $primaryFont;
+            font-size: 3em;
+            letter-spacing: 0.1em;
+            text-align: center;
+        }
+
+        p{
+            font-family: $tertiaryFont;
+            font-size: 1.6em;
+            letter-spacing: 0.1em;
+            text-align: center;
+            line-height: 2em;
+        }
+
+        .aboutUcContent{
+            .ucIntro{
+                width: 1200px;
+                margin: auto;
+            }
+
+            .programs{
+               // background-color: #eef2f6;
+                //color: #1E1E1E;
+
+                .col{
+                    max-width: 50%;   
+                }
+
+                .left{
+                    float: left;
+                }
+
+                .right{
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+
+
+  
+  

@@ -1,0 +1,72 @@
+header {
+  height: 79px;
+  width: 100%;
+}
+
+header .headerContainer {
+  cursor: pointer;
+  position: fixed;
+}
+
+header .headerContainer .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header .headerContainer .change .bar2 {
+  opacity: 0;
+}
+
+header .headerContainer .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header .headerContainer .menuToggle {
+  padding: 20px;
+  background-color: #111111;
+  border: none;
+}
+
+header .headerContainer .menuToggle .bar1, header .headerContainer .menuToggle .bar2, header .headerContainer .menuToggle .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.menuToggleInner {
+  background-color: #111111;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  position: fixed;
+}
+
+.menuToggleInner a {
+  position: relative;
+  width: 100%;
+  top: 15%;
+  text-align: center;
+  color: #efefef;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 37px;
+  display: block;
+}
+
+.menuToggleInner a:hover {
+  background-color: #efefef;
+  color: #111111;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.show {
+  width: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,294 @@
+header {
+  height: 79px;
+  width: 100%;
+  background-color: #1E1A1B;
+}
+
+header .headerContainer {
+  cursor: pointer;
+  position: fixed;
+}
+
+header .headerContainer .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header .headerContainer .change .bar2 {
+  opacity: 0;
+}
+
+header .headerContainer .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header .headerContainer .menuToggle {
+  padding: 20px;
+  background-color: #1E1A1B;
+  border: none;
+}
+
+header .headerContainer .menuToggle .bar1, header .headerContainer .menuToggle .bar2, header .headerContainer .menuToggle .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.menuToggleInner {
+  background-color: #1E1A1B;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  position: fixed;
+}
+
+.menuToggleInner a {
+  position: relative;
+  width: 100%;
+  top: 15%;
+  text-align: center;
+  color: #efefef;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 37px;
+  font-family: "Mukta", sans-serif;
+  letter-spacing: 0.2em;
+  display: block;
+}
+
+.menuToggleInner a:hover {
+  color: #666537;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.show {
+  width: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+#introduction {
+  margin: 0% 5%;
+  padding-bottom: 15%;
+}
+
+#introduction .content {
+  margin-top: 10%;
+}
+
+#introduction .content h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 5px #ffffff solid;
+  max-width: 55%;
+  padding: 0.5em;
+  color: #ffffff;
+}
+
+#introduction .content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.4em;
+  color: #ffffff;
+}
+
+#introduction .content ul {
+  margin-top: 10%;
+  margin-bottom: 0;
+}
+
+#introduction .content ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#introduction .content ul li a {
+  text-decoration: none;
+  font-family: "Mukta", sans-serif;
+  font-size: 1.7rem;
+  color: #ffffff;
+  letter-spacing: .40em;
+}
+
+#introduction .content ul li a:hover {
+  color: #666537;
+}
+
+#aboutMe {
+  background-color: #eef2f6;
+  overflow: hidden;
+  margin: 0;
+  padding: 50px 0;
+}
+
+#aboutMe .profile {
+  margin-left: 50px;
+  width: 28.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  line-height: 1.9em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#aboutMe .profile ul li {
+  list-style: none;
+}
+
+#aboutMe .profile h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: black;
+}
+
+#aboutMe .profile h3 {
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #1E1E1E;
+}
+
+#aboutMe .profile p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: #2D2D2D;
+}
+
+#portfolio {
+  background-color: #353535;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+#portfolio .imgBackground {
+  height: 210px;
+  background-size: cover;
+}
+
+#portfolio ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#portfolio ul li {
+  list-style: none;
+  margin: 50px;
+}
+
+#portfolio ul li .ptContent {
+  width: 401px;
+}
+
+#portfolio ul li .ptContent .content {
+  background: #252525;
+  padding: 34px 22px;
+}
+
+#portfolio ul li .ptContent .content a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666537;
+  text-decoration: none;
+}
+
+#portfolio ul li .ptContent .content a:hover {
+  color: #eef2f6;
+}
+
+#portfolio ul li .ptContent .content h3 {
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #666537;
+}
+
+#uc {
+  background-color: #eef2f6;
+  margin: 0;
+  padding: 0;
+  border-bottom: 5px #2F2F2F solid;
+}
+
+#uc .ucContainer {
+  padding: 50px 0;
+}
+
+#uc .ucContainer .ucHymn {
+  padding: 20px 50px;
+}
+
+#uc .ucContainer .ucHymn h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #1E1E1E;
+}
+
+#uc .ucContainer .ucHymn p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 2em;
+  color: #2D2D2D;
+}
+
+#aboutUC {
+  background-color: #252525;
+  color: #eef2f6;
+  overflow: hidden;
+}
+
+#aboutUC .aboutUcContainer h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+#aboutUC .aboutUcContainer p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 2em;
+}
+
+#aboutUC .aboutUcContainer .aboutUcContent .ucIntro {
+  width: 1200px;
+  margin: auto;
+}
+
+#aboutUC .aboutUcContainer .aboutUcContent .programs .col {
+  max-width: 50%;
+}
+
+#aboutUC .aboutUcContainer .aboutUcContent .programs .left {
+  float: left;
+}
+
+#aboutUC .aboutUcContainer .aboutUcContent .programs .right {
+  float: right;
+}
+/*# sourceMappingURL=style.css.map */
